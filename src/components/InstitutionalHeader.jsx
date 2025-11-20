@@ -10,7 +10,8 @@ const InstitutionalHeader = () => {
             alt="PRASA Logo" 
             className="h-20 object-contain"
             onError={(e) => {
-              e.target.src = '/logo prasa.png'
+              e.target.style.display = 'none'
+              e.target.onerror = null
             }}
           />
           <div className="border-l-2 border-gray-300 pl-6">

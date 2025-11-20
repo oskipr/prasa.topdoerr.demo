@@ -1,6 +1,7 @@
 {
   "name": "prasa-dashboard",
   "version": "1.0.0",
+  "type": "module",
   "description": "Dashboard mockup para PRASA - Plataforma Unificada de Operaciones y Analítica Predictiva",
   "scripts": {
     "dev": "vite",

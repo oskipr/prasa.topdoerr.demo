@@ -133,7 +133,7 @@ const IntelligentAlerts = () => {
             return (
               <div
                 key={alert.id}
-                className={`border-l-4 ${priorityColors.border} ${priorityColors.bg} rounded-r-lg p-4 hover:shadow-sm transition-shadow bg-white`}
+                className={`border-l-4 ${priorityColors.border} ${priorityColors.bg} rounded-r-lg p-4 hover:shadow-sm transition-shadow`}
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-start space-x-4 flex-1">
