@@ -56,6 +56,11 @@ const KPICards = () => {
                 <span className="ml-2 text-lg text-gray-600">{kpi.unit}</span>
               )}
             </div>
+            {kpi.title === 'Sensores activos' && (
+              <p className="text-xs text-gray-500 mt-2">
+                Integrados vía Wonderware/AVEVA + IoT TopDoerr
+              </p>
+            )}
           </div>
         ))}
       </div>

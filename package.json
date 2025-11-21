@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@turf/turf": "^7.3.0",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
     "recharts": "^2.10.3"
   },
   "devDependencies": {
@@ -23,4 +26,3 @@
     "vite": "^5.0.8"
   }
 }
-

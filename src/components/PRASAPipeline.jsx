@@ -10,39 +10,39 @@ const PRASAPipeline = () => {
     },
     {
       id: 2,
-      name: 'Sensores IoT',
-      description: 'Telemetría',
+      name: 'IoT / Telemetría',
+      description: 'Sensores',
       status: 'active',
     },
     {
       id: 3,
-      name: 'Transmisión',
-      description: 'Red de datos',
-      status: 'active',
-    },
-    {
-      id: 4,
-      name: 'Armonización',
+      name: 'Capa de Armonización',
       description: 'TopDoerr',
       status: 'active',
     },
     {
+      id: 4,
+      name: 'Modelos Predictivos',
+      description: 'ML/AI',
+      status: 'active',
+    },
+    {
       id: 5,
-      name: 'Dashboards',
+      name: 'Dashboard Unificado',
       description: 'Visualización',
       status: 'active',
     },
     {
       id: 6,
-      name: 'Alertas',
-      description: 'Notificaciones',
+      name: 'Alertas & Recomendaciones',
+      description: 'Auto',
       status: 'active',
     },
   ]
 
   return (
     <div>
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">Arquitectura del Sistema</h2>
+      <h2 className="text-xl font-semibold text-gray-800 mb-4">Arquitectura del Sistema – TopDoerr Utilities</h2>
       <div className="bg-white rounded border border-gray-300 shadow-sm p-6">
         {/* Diagrama horizontal institucional */}
         <div className="flex items-center justify-between flex-wrap gap-4">

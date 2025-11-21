@@ -1,13 +1,16 @@
 import React from 'react'
 import InstitutionalHeader from './components/InstitutionalHeader'
 import SystemStatus from './components/SystemStatus'
+import SCADAIntegration from './components/SCADAIntegration'
 import RegionalStatus from './components/RegionalStatus'
 import ProductionFlow from './components/ProductionFlow'
 import KPICards from './components/KPICards'
 import OperationalMap from './components/OperationalMap'
 import SensorsTelemetry from './components/SensorsTelemetry'
+import WaterQualityAnalysis from './components/WaterQualityAnalysis'
 import PredictiveModules from './components/PredictiveModules'
 import IntelligentAlerts from './components/IntelligentAlerts'
+import AutomaticRecommendations from './components/AutomaticRecommendations'
 import PRASAPipeline from './components/PRASAPipeline'
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
       <main className="max-w-7xl mx-auto px-6 py-6 space-y-6">
         {/* Estado del Sistema */}
         <SystemStatus />
+
+        {/* Integración con SCADA */}
+        <SCADAIntegration />
 
         {/* Estado por Región */}
         <RegionalStatus />
@@ -36,11 +42,17 @@ function App() {
         {/* Sensores y telemetría */}
         <SensorsTelemetry />
 
+        {/* Análisis Químico / Calidad de Agua */}
+        <WaterQualityAnalysis />
+
         {/* Módulos predictivos */}
         <PredictiveModules />
 
         {/* Alertas inteligentes */}
         <IntelligentAlerts />
+
+        {/* Recomendaciones Automáticas */}
+        <AutomaticRecommendations />
 
         {/* Arquitectura del Sistema */}
         <PRASAPipeline />

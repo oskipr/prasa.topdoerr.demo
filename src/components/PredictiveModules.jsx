@@ -38,6 +38,18 @@ const PredictiveModules = () => {
       color: 'border-gray-300 bg-gray-50',
       iconBg: 'bg-gray-100',
     },
+    {
+      title: 'Comportamiento Químico Anómalo',
+      subtitle: 'Análisis predictivo',
+      icon: '●',
+      risks: [
+        { name: 'Planta Filtros', location: 'Cloro fluctuante', risk: 'Alto', status: 'critical' },
+        { name: 'Estación Sur', location: 'Turbidez elevada intermitente', risk: 'Medio', status: 'warning' },
+        { name: 'Sector Oeste', location: 'pH fuera de rango histórico', risk: 'Bajo', status: 'info' },
+      ],
+      color: 'border-gray-300 bg-gray-50',
+      iconBg: 'bg-gray-100',
+    },
   ]
 
   const getRiskBadgeColor = (status) => {
@@ -56,7 +68,7 @@ const PredictiveModules = () => {
   return (
     <div>
       <h2 className="text-xl font-semibold text-gray-800 mb-4">Módulos Predictivos</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {modules.map((module, index) => (
           <div
             key={index}
