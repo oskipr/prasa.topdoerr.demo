@@ -14,8 +14,8 @@ const InstitutionalHeader = () => {
               e.target.onerror = null
             }}
           />
-          <div className="border-l-0 sm:border-l-2 border-gray-300 pl-0 sm:pl-4 md:pl-6 w-full sm:w-auto">
-            <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 leading-tight">
+          <div className="border-l-0 sm:border-l-2 border-gray-300 pl-0 sm:pl-4 md:pl-6 w-full sm:w-auto flex-1 min-w-0">
+            <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 leading-tight break-words lg:whitespace-nowrap">
               PRASA – Plataforma Unificada de Operaciones y Analítica Predictiva
             </h1>
             <p className="mt-1 text-xs sm:text-sm md:text-base lg:text-lg text-gray-600">
