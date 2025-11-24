@@ -38,20 +38,20 @@ const SystemStatus = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">Estado del Sistema (en tiempo real)</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">Estado del Sistema (en tiempo real)</h2>
+      <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         {statusItems.map((item, index) => (
           <div
             key={index}
-            className={`bg-white rounded border-2 ${item.borderColor} ${item.bgColor} p-4 shadow-sm`}
+            className={`bg-white rounded border-2 ${item.borderColor} ${item.bgColor} p-3 sm:p-4 lg:p-5 shadow-sm`}
           >
-            <p className="text-xs font-medium text-gray-600 uppercase tracking-wide mb-2">
+            <p className="text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mb-2">
               {item.label}
             </p>
             <div className="flex items-baseline">
-              <span className={`text-3xl font-bold ${item.color}`}>{item.value}</span>
+              <span className={`text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold ${item.color}`}>{item.value}</span>
               {item.unit && (
-                <span className={`ml-2 text-sm ${item.color} font-medium`}>{item.unit}</span>
+                <span className={`ml-2 text-xs sm:text-sm lg:text-base ${item.color} font-medium`}>{item.unit}</span>
               )}
             </div>
           </div>

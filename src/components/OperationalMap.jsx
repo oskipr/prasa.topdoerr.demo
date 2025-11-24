@@ -38,13 +38,13 @@ const OperationalMap = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">Mapa Operacional</h2>
-      <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6">
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="text-lg font-semibold text-gray-800">Mapa de Puerto Rico - Infraestructura</h3>
+      <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">Mapa Operacional</h2>
+      <div className="bg-white rounded-lg shadow-md border border-gray-200 p-4 sm:p-5 md:p-6">
+        <div className="flex items-center justify-between mb-3 sm:mb-4">
+          <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-800">Mapa de Puerto Rico - Infraestructura</h3>
         </div>
         
-        <div className="relative rounded-lg border border-gray-300 overflow-hidden" style={{ height: '400px' }}>
+        <div className="relative rounded-lg border border-gray-300 overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px]">
           <MapContainer
             center={[18.2, -66.3]}
             zoom={8}
@@ -73,7 +73,7 @@ const OperationalMap = () => {
                   }}
                 >
                   <Popup>
-                    <div className="text-sm">
+                    <div className="text-xs sm:text-sm">
                       <p className="font-semibold text-gray-900">{point.name}</p>
                       <p className="text-gray-600 mt-1">
                         <span className="font-medium">Tipo:</span> {point.type}
@@ -92,23 +92,23 @@ const OperationalMap = () => {
           </MapContainer>
           
           {/* Leyenda personalizada */}
-          <div className="absolute top-4 right-4 bg-white rounded-lg shadow-lg border border-gray-300 p-3 z-[1000]">
-            <h4 className="text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">Leyenda</h4>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: typeColors['Planta'] }}></div>
+          <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-white rounded-lg shadow-lg border border-gray-300 p-2 sm:p-3 z-[1000] max-w-[120px] sm:max-w-none">
+            <h4 className="text-xs font-semibold text-gray-700 mb-1 sm:mb-2 uppercase tracking-wide">Leyenda</h4>
+            <div className="space-y-1 sm:space-y-2">
+              <div className="flex items-center space-x-1 sm:space-x-2">
+                <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full flex-shrink-0" style={{ backgroundColor: typeColors['Planta'] }}></div>
                 <span className="text-xs text-gray-700 font-medium">Plantas</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: typeColors['Bomba'] }}></div>
+              <div className="flex items-center space-x-1 sm:space-x-2">
+                <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full flex-shrink-0" style={{ backgroundColor: typeColors['Bomba'] }}></div>
                 <span className="text-xs text-gray-700 font-medium">Bombas</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: typeColors['Tanque'] }}></div>
+              <div className="flex items-center space-x-1 sm:space-x-2">
+                <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full flex-shrink-0" style={{ backgroundColor: typeColors['Tanque'] }}></div>
                 <span className="text-xs text-gray-700 font-medium">Tanques</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: typeColors['Sensor Químico'] }}></div>
+              <div className="flex items-center space-x-1 sm:space-x-2">
+                <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full flex-shrink-0" style={{ backgroundColor: typeColors['Sensor Químico'] }}></div>
                 <span className="text-xs text-gray-700 font-medium">Sensores</span>
               </div>
             </div>

@@ -20,7 +20,7 @@ function App() {
       <InstitutionalHeader />
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-6 py-6 space-y-6">
+      <main className="max-w-7xl 2xl:max-w-[90rem] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 py-4 sm:py-5 md:py-6 space-y-4 sm:space-y-5 md:space-y-6">
         {/* Estado del Sistema */}
         <SystemStatus />
 

@@ -67,37 +67,37 @@ const PredictiveModules = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">Módulos Predictivos</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">Módulos Predictivos</h2>
+      <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
         {modules.map((module, index) => (
           <div
             key={index}
-            className={`bg-white rounded border ${module.color} p-5 shadow-sm hover:shadow-md transition-shadow`}
+            className={`bg-white rounded border ${module.color} p-4 sm:p-5 shadow-sm hover:shadow-md transition-shadow`}
           >
-            <div className="flex items-start justify-between mb-4 pb-4 border-b border-gray-200">
-              <div className="flex items-center space-x-3 flex-1">
-                <div className={`${module.iconBg} p-2 rounded border border-gray-300`}>
-                  <span className="text-xl font-bold text-gray-700">{module.icon}</span>
+            <div className="flex items-start justify-between mb-3 sm:mb-4 pb-3 sm:pb-4 border-b border-gray-200">
+              <div className="flex items-center space-x-2 sm:space-x-3 flex-1">
+                <div className={`${module.iconBg} p-1.5 sm:p-2 rounded border border-gray-300 flex-shrink-0`}>
+                  <span className="text-lg sm:text-xl md:text-2xl font-bold text-gray-700">{module.icon}</span>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-0.5">{module.title}</h3>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-0.5">{module.title}</h3>
                   <p className="text-xs text-gray-500 uppercase tracking-wide">{module.subtitle}</p>
                 </div>
               </div>
             </div>
-            <div className="space-y-2 mt-4">
+            <div className="space-y-2 mt-3 sm:mt-4">
               {module.risks.map((risk, riskIndex) => {
                 const badgeColors = getRiskBadgeColor(risk.status)
                 return (
                   <div key={riskIndex}>
-                    <div className="bg-white rounded border border-gray-200 p-3">
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <p className="font-semibold text-gray-900 text-sm">{risk.name}</p>
-                          <p className="text-xs text-gray-500 mt-0.5 font-mono">{risk.location}</p>
+                    <div className="bg-white rounded border border-gray-200 p-2 sm:p-3">
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="flex-1 min-w-0">
+                          <p className="font-semibold text-gray-900 text-xs sm:text-sm">{risk.name}</p>
+                          <p className="text-xs text-gray-500 mt-0.5 font-mono break-words">{risk.location}</p>
                         </div>
                         <span
-                          className="px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wide border ml-3"
+                          className="px-2 sm:px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wide border ml-2 sm:ml-3 flex-shrink-0"
                           style={{
                             backgroundColor: badgeColors.bg,
                             color: badgeColors.text,
